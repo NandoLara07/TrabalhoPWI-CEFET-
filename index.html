@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="CEFET(logo).ico" type="image/x-icon">
+        <title>Trabalho de PWI</title>
+    </head> 
+        <h1>TRABALHO DE PWI - Tema 4</h1>
+        <h2>Prof. Aguinaldo</h2>
+        <h4>Participantes: </h4>
+            <li>Isabela dos Santos Cordeiro</li>
+            <li>Fernando Lara dos Santos</li>
+            <li>Eduarda Santos de Vasconcelos</li>
+            <li>Francisco de Castro Borges</li>
+        <hr>
+        <h1>Tecnologias Web (Parte 1)</h1>
+        <h2>XML</h2>
+            <p>Extensible Markup Language (Linguagem de marcação extensivel) <span style="color: orangered;">é um dos grandes padrões</span> para trocas de dados entre sistemas e para armazenamentos. 
+                Criada em 1996 sendo uma metalinguagem de marcação definido pelo <span style="color: orangered;">W3C</span> (World Wide Web Consortium) e <span style="color: orangered;">baseada na SGML</span>.</p>
+            <p>Essa linguagem permite <span style="color: orangered;">definir</span> e <span style="color: orangered;">armazenar</span> dados de forma compartilhável, facilitando o intercâmbio de informações entre sistemas de computador, como sites e bancos de dados. Regras predefinidas facilitam a transmissão precisa e eficiente de dados, como arquivos XML, em redes.</p>
+            <p>XML é uma <span style="color: orangered;">linguagem de marcação</span> usada para definir dados, mas não realiza operações de computação. Pode ser implementada com qualquer linguagem de programação para gerenciar dados estruturados. Por <span style="color: orangered;">não</span> ter tags pré-definidas, é o <span style="color: orangered;">usuário quem vai definir as tags</span> do documento XML de acordo com as necessidades dos dados que serão armazenados .</p>
+        <h3>Regras</h3>
+            <ul type="square">
+                <li>Deve existir apenas <span style="color: orangered;">um</span> elemento raiz, que vai ter os demais elementos alinhados a ele.</li>
+                <li>Cada elemento deve ter sua <span style="color: orangered;">tag de fechamento</span>.</li>
+                <li>A estrutura de elementos deve estar correta (<span style="color: orangered;">alinhada</span>).</li>
+                <li>No XML, as tags são <span style="color: orangered;">Case Sensitive</span></li>
+            </ul>
+        <h3>Exemplo</h3>
+        <pre>
+            &lt;?<span style="color: blue;">xml</span> <span style="color: rgb(92, 154, 236);">version</span>=<span style="color: rgb(255, 92, 32);">"1.0"</span><span style="color: rgb(92, 154, 236);">encoding</span>=<span style="color: rgb(255, 92, 32);">"UTF-8"</span>?&gt;
+            &lt;<span style="color: blue;">cdfs</span>&gt;
+                &lt;<span style="color: blue;">cdf</span> <span style="color: rgb(92, 154, 236);">id</span>=<span style="color: rgb(255, 92, 32);">"1"</span>&gt;
+                    &lt;<span style="color: blue;">nome</span>&gt;Gabriel Fróes&lt;/<span style="color: blue;">nome</span>&gt;
+                    &lt;<span style="color: blue;">nascimento</span>&gt;1980-07-04&lt;/<span style="color: blue;">nascimento</span>&gt;
+                    &lt;<span style="color: blue;">redessociais</span>&gt;
+                        &lt;<span style="color: blue;">twitter</span>&gt;gabrielfroes&lt;/<span style="color: blue;">twitter</span>&gt;
+                        &lt;<span style="color: blue;">instagram</span>&gt;gabrielroccofroes&lt;/<span style="color: blue;">instagram</span>&gt;
+                    &lt;/<span style="color: blue;">redessociais</span>&gt;
+                &lt;/<span style="color: blue;">cdf</span>&gt;
+                &lt;<span style="color: blue;">cdf</span> <span style="color: rgb(92, 154, 236);">id</span>=<span style="color: rgb(255, 92, 32);">"2"</span>&gt;
+                    &lt;<span style="color: blue;">nome</span>&gt;Vanessa Weber&lt;/<span style="color: blue;">nome</span>&gt;
+                    &lt;<span style="color: blue;">nascimento</span>&gt;1981-03-27&lt;/<span style="color: blue;">nascimento</span>&gt;
+                    &lt;<span style="color: blue;">redessociais</span>&gt;
+                        &lt;<span style="color: blue;">twitter</span>&gt;nessaweberfroes&lt;/<span style="color: blue;">twitter</span>&gt;
+                        &lt;<span style="color: blue;">instagram</span>&gt;vanessaweberfroes&lt;/<span style="color: blue;">instagram</span>&gt;
+                    &lt;/<span style="color: blue;">redessociais</span>&gt;
+                &lt;/<span style="color: blue;">cdf</span>&gt;
+            &lt;/<span style="color: blue;">cdfs</span>&gt;
+        </pre>
+        <h3>Saiba mais:</h3>
+            <p><a href="https://www.youtube.com/watch?v=h7W0UuRd4fc&t=266s" target="_blank">Vídeo 1:</a> XML // Dicionário do Programador (Código Fonte TV)</p>
+            <p><a href="https://www.youtube.com/watch?v=9408HdOYhAA&t=6s" target="_blank">Vídeo 2:</a> O que é XML (DBA PRO)</p>
+            <p><a href="https://aws.amazon.com/pt/what-is/xml/" target="_blank">Site:</a> O que é XML? (Amazon)</p>
+        <br>
+        <br>
+        <h2>API</h2>
+            <p>Interface de Programação de Aplicações (API) é uma maneira de <span style="color: orangered;">trazer informações</span> de <span style="color: orangered;">outras</span> páginas, sistemas, softwares e plataformas diretamente <span style="color: orangered;">para a sua interface</span>, sem exigir que o usuário acesse outro sistema. Em resumo, a API é criada para permitir que um <span style="color: orangered;">sistema utilize as funcionalidades de outro sistema</span>.</p>
+            <p>É uma <span style="color: orangered;">ferramenta que auxilia os programadores</span>, evitando a necessidade de criar tudo do zero. A API funciona como uma <span style="color: orangered;">ponte</span> entre o seu programa e outra plataforma da qual deseja <span style="color: orangered;">extrair informações</span>. É a interface perfeita para a <span style="color: orangered;">comunicação</span> entre sistemas, permitindo o compartilhamento de ações, ferramentas, padrões e protocolos, gerando uma “conversa” de sistema para sistema.</p>
+            <p>Para <span style="color: orangered;">facilitar</span> a compreensão do que é uma API, muitos usam o <span style="color: orangered;">exemplo</span> do <span style="color: orangered;">restaurante</span>.</p>
+        <ul type="square">
+            <li>Ao conectarem os sistemas, as APIs desempenham um papel fundamental na <span style="color: orangered;">criação de aplicativos</span>.
+                Por <span style="color: orangered;">exemplo</span>, o sistema de software do instituto meteorológico contém dados meteorológicos diários. O aplicativo de previsão do tempo em seu telefone se <span style="color: orangered;">conecta</span> a esse sistema por meio de <span style="color: orangered;">APIs</span>, exibindo atualizações meteorológicas diárias no telefone.</li>
+            <li>A arquitetura da API é frequentemente explicada em termos de <span style="color: orangered;">cliente</span> e <span style="color: orangered;">servidor</span>. O aplicativo que faz a solicitação é o cliente, e o que envia a resposta é o servidor. Portanto, no exemplo do clima, o banco de dados meteorológico do instituto atua como servidor, enquanto o aplicativo móvel é o cliente.</li>
+        </ul>
+        <h3>Tipos de APIs no mercado</h3>
+            <p>As APIs <span style="color: orangered;">permitem</span> a disponibilização de serviços como reservas de hotéis, compras de passagens aéreas, cálculos de frete em lojas online, entre outros.</p>
+                <li><span style="color: purple;">Google Maps</span>: Ideal para adicionar um mapa ao site.</li>
+                <li><span style="color: purple;">API de CEP</span>: Permite mostrar automaticamente informações ao inserir o CEP em um site de compras.</li>
+                <li><span style="color: purple;">E-commerce</span>: Oferece um método de pagamento seguro em serviços renomados.</li>
+                <li><span style="color: purple;">Google Drive</span>: Para armazenamento.</li>
+                <li><span style="color: purple;">Spotify</span>: Para reprodução de músicas.</li>
+        <h3>Saiba mais:</h3>
+            <p><a href="https://youtu.be/PIro1he52Xw?si=-YJcPF7eQgqXQv_l" target="_blank">Vídeo 1:</a> Você precisa entender o que é API pra melhorar como DEV! (Rafaella Ballerini)</p>
+            <p><a href="https://youtu.be/vGuqKIRWosk?si=KK_sOIUJ17F_5iFe" target="_blank">Vídeo 2:</a> API // Dicionário do Programador (Código Fonte TV)</p>
+        <br>
+        <br>
+        <h2>URI e URL</h2>
+            <p>URI e URL <span style="color: orangered;">são basicamente links</span>. Esses termos se referem ao <span style="color: orangered;">endereço</span> de uma determinada <span style="color: orangered;">página na web</span>. Por exemplo, o que você vê na barra de endereço do navegador, com o nome do site seguido de barras, números e símbolos, como no caso de "<span style="color: green;">https://www.youtube.com</span>".</p>
+            <img src="URL.png" alt="Imagem URL">
+        <h3>URI</h3>
+            <ul type="square">
+                <li> <span style="color: green;">Identificador de Recursos Universal</span>: como o próprio nome indica, é o <span style="color: orangered;">Identificador</span> único de recursos, seja uma imagem, uma página, etc, garantindo que cada item na internet tenha uma <span style="color: orangered;">identificação única</span>.</li>
+        </ul>
+        <h3>URL</h3>
+            <ul type="square">
+                <li><span style="color: green;">Localizador de Recursos Universal</span>: refere-se ao <span style="color: orangered;">local</span> (host) que você deseja acessar para obter um recurso específico. O objetivo da URL é <span style="color: orangered;">associar</span> um <span style="color: orangered;">endereço remoto</span> com um nome de recurso na Internet. </li>
+            </ul>
+            <p>Ao acessar endereços como:</p>
+                <li><span style="color: rgb(0, 110, 255);">woliveiras.com.br</span> </li>
+                <li><span style="color: rgb(0, 110, 255);">woliveiras.org</span></li>
+            <p>Você é direcionado ao servidor que contém informações sobre URI e URL, por exemplo, sendo a URL parte da URI.</p>
+                <li>Quando falamos de <span style="color: orangered;">recursos</span> a serem buscados <span style="color: orangered;">podem ser</span> tanto: 
+                    Websites <span style="color: orangered;">completos</span> (como o youtube).</li>
+                <li>Quanto outros tipos de dados que são <span style="color: orangered;">transmitidos via web</span> em outros formatos e por meio de outros protocolos que <span style="color: orangered;">não</span> são HTTP ou HTTPS.</li>
+            <p>Exemplo de protocolos que <span style="color: orangered;">não</span> são HTTP ou HTTPS:</p>
+                <li><span style="color: rgb(0, 110, 255);">mailto:contato@website.com.br</span></li>
+                <li><span style="color: rgb(0, 110, 255);">file:///home/usuario/arquivo.txt</span></li>
+                <li><span style="color: rgb(0, 110, 255);">tel:+5511123456789</span></li>
+            
+            <p>URLs <span style="color: orangered;">sempre começam</span> com um protocolo (http, ftp, etc) e geralmente contendo informações sobre o <span style="color: orangered;">nome da rede hospedeira</span> (website.com) e um <span style="color: orangered;">caminho</span> dentro dos arquivos: <br>(<span style="color: green;">/páginas/categoria/artigo.html</span>). </p>
+        <h3>URI e URL - Exemplo com analogia</h3>
+
+            <ul>
+                <li>Aguinaldo Aves</li>
+            </ul>
+        <p>Esse é o nome do professor, e é um <span style="color: orangered;">indentificador</span>. Ele é como uma URI, mas <span style="color: orangered;">não</span> pode ser uma URL pois não diz nada sobre como localizá-lo ou encontrá-lo. <span style="color: orangered;">Então</span>, existem <span style="color: orangered;">centenas</span> ou milhares de <span style="color: orangered;">outros Aguinaldo Alves</span> no Brasil.</p>
+            <ul>
+                <li>Rua X, nº123, cidade Y</li>
+            </ul>
+        <p><span style="color: orangered;">Localizador</span> que identifica uma localização física específica, sendo tanto um localizador quanto um identificador.</p>
+        
+        <h3>Saiba mais:</h3>
+        <p><a href="https://youtu.be/vHa_cKryvnM?si=_pkv8n7wyPdJ3qHG" target="_blank">Vídeo:</a> QUAL A DIFERENÇA ENTRE URL, URI E URN (Iglu)</p>
+        <p><a href="https://igluonline.com/qual-diferenca-entre-url-uri-e-urn/" target="_blank">Site 1:</a> QUAL A DIFERENÇA ENTRE URL, URI E URN (Iglu)</p>
+        <p><a href="https://woliveiras.com.br/posts/url-uri-qual-diferenca" target="_blank">Site 2:</a> URL ou URI, qual a diferença? (William Oliveira)</p>
+        <br><br>
+        
+        <h1>RPC</h1>
+            <p>Remote Procedure Call (Chamada de Procedimento Remoto) é um <span style="color: orangered;">protocolo</span> de <span style="color: orangered;">comunicação</span> que permite que computadores clientes e computadores servidor se comuniquem e <span style="color: orangered;">executem procedimentos remotamente como se fossem local</span>. Em outras palavras, o RPC permite que computadores se comuniquem entre si por meio de uma <span style="color: orangered;">rede</span>, facilitando a execução de procedimentos em sistemas remotos.</p>
+        <h3>Exemplo de uso:</h3>
+            <p>Imagine um sistema de gestão de estoque em que vários <span style="color: orangered;">dispositivos</span>, como caixas registradoras e terminais de inventário, precisam <span style="color: orangered;">acessar saldo de um produto</span> em um servidor central. O <span style="color: orangered;">cliente</span> envia uma <span style="color: orangered;">solicitação</span> RPC ao servidor com o procedimento "Verificar Saldo" e os parâmetros, como o <span style="color: orangered;">código</span> do produto. O <span style="color: orangered;">servidor</span> realiza o procedimento, verifica o saldo e envia a quantidade disponível como resposta ao cliente. Todo esse processo ocorre de maneira <span style="color: orangered;">transparente</span> para o usuário, como se a operação fosse realizada localmente.</p>
+        
+        <h3>Saiba mais:</h3>
+        <p><a href="https://www.dic.app.br/2005/05/rpc-chamada-de-procedimento-remoto.html" target="_blank">Site:</a> RPC - chamada de procedimento remoto [remote procedure call] (DicApp)</p>
+        <hr>
+        <h1>Tipos de Websites</h1>
+        <h2>Portais Web</h2>
+            <p>Os portais web são ferramentas que
+                permitem o acesso a informações e 
+                serviços de uma empresa ou organização 
+                para um <span style="color: orangered;">público mais limitado</span>, como 
+                clientes, funcionários, fornecedores ou parceiros de negócios. Um portal web pode ser projetado para fornecer <span style="color: orangered;">acesso fácil e rápido a informações e serviços</span>, como gerenciamento de contas, suporte ao cliente, recursos de autoatendimento, relatórios de desempenho, entre outros. </p>
+        
+            <p>O portal web <span style="color: orangered;">é projetado</span> para fornecer uma <span style="color: orangered;">experiência personalizada e eficiente</span> para seus usuários, oferecendo recursos <span style="color: orangered;">de acordo</span> com suas necessidades e preferências individuais.</p>
+
+            <p>Um portal é um site na internet projetado para aglomerar e distribuir conteúdos de <span style="color: orangered;">várias fontes diferentes de maneira uniforme</span>, sendo um ponto de acesso para uma série de outros sites ou subsites internamente ou externamente ao domínio ou subdomínio da empresa gestora do portal.</p>
+        <h3>Saiba mais:</h3>
+            <p><a href="https://blog.compila.com.br/saiba-o-que-sao-portais-web-e-como-eles-podem-beneficiar-o-seu-negocio/" target="_blank">Site:</a> SAIBA O QUE SÃO PORTAIS WEB E COMO ELES PODEM BENEFICIAR O SEU NEGÓCIO (Compila)</p>
+        <br><br>
+        <h2>Buscadores</h2>
+                <p>Os buscadores ou Site de Busca é um serviço <span style="color: orangered;">capaz de indexar grande quantidade de dados/informações</span> presentes na internet e disponibilizar aos usuários uma forma fácil, rápida e eficiente de <span style="color: orangered;">localizar</span> o conteúdo.</p>
+            
+        <img src="Google_e_buscador.png" alt="Busca do Google">
+        <p><span style="color: green;">Google</span> - é um mecanismo de busca bem conhecido e padrão em navegadores, como o Google Chrome,Mozilla Firefox, Opera.</p>
+
+        <img src="Bing_e_buscador.png" alt="Busca do bing">
+        <p><span style="color: green;">Bing</span> - é um mecanismo de busca criado pela Microsoft e utilizado como padrão pelos navegadores Internet Explorer e Microsoft Edge.</p>
+        
+        <img src="Yahoo_e_buscador.png" alt="Busca do Yahoo">
+        <p><span style="color: green;">Yahoo!</span> - é um sistema de busca bem antigo mas conhecido e que ainda é utilizado.</p>
+
+        <img src="DuckDuckGo_e_busca.png" alt="Busca do DuckDuckGo">
+        <p><span style="color: green;">DuckDuckGo</span> - é um buscador que promete ser uma ferramenta que evita rastreamento do usuário mantendo a privacidade, não armazenando informações pessoais, como histórico de pesquisa, endereço IP ou qualquer outra informação identificável.</p>
+
+        <h3>Saiba mais:</h3>
+        <p><a href="https://youtu.be/6_YRZhzs8AM?si=TIsyiJKjpdTTTIOk" target="_blank">Vídeo:</a> Sites de busca na internet (Dicionário de Informática)</p>
+        <br><br>
+        
+        <h2>Site Corporativo</h2>
+        <p>Sites Corporativos (<span style="color: orangered;">ou Intitucionais</span>) é um site criado para trazer <span style="color: orangered;">informações de um negócio</span> ou de uma empresa para qualquer pessoa na internet. Apresentando sobre a empresa, quando surgiu, qual sua missão, os produtos e serviços que ela fornece entre outros assuntos.</p>
+        <p>Um exemplo, é o site da <a href="https://www.mi.com/br/" target="_blank">Xioami Brasil</a>.</p>
+        
+        <h2>Site Educativo</h2>
+        <p>Sites educativos são criados para <span style="color: orangered;">fornecer recursos de aprendizado</span>, materiais didáticos e <span style="color: orangered;">informações educacionais</span> a estudantes, professores e ao público em geral.</p>
+        <p>Um exemplo é o <a href="https://sig.cefetmg.br/sigaa/verTelaLogin.do;jsessionid=06C396D8C8FCBF6962F730680BC5A74F.inst5" target="_blank">SIGAA</a>, utilizado pelo CEFET-MG.</p>
+        <br>
+        <h3>Diferença entre Site Corporativo e Educativo</h3>
+        <p>Os sites corporativos são voltados para <span style="color: orangered;">clientes</span>, investidores, parceiros e funscionários, com um foco em <span style="color: orangered;">negócios e marketing</span>, sites educativos atendem <span style="color: orangered;">estudantes</span>, educadores e pesquisadores, com um foco na disseminação de conhecimento e no <span style="color: orangered;">suporte ao aprendizado</span>. A diferença principal reside no <span style="color: orangered;">propósito</span> e no público-alvo de cada tipo de site, que orienta tanto o conteúdo quanto o design e as funcionalidades oferecidas.</p>
+        <h3>Saiba mais</h3>
+        <p><a href="https://youtu.be/N2UDdynxuxs?si=2ZzIdA0VzCWB3Gsu" target="_blank">Vídeo:</a> O QUE SÃO SITES CORPORATIVOS | TIPOS DE SITES (Anderson Santana)</p>
+        <br><br>
+        <h2>Diferença entre Blogs, Redes Sociais, E-commerce, Sites Bancários, e Multimídia</h2>
+        <h2>Blogs</h2>
+                <p>Blogs são plataformas onde os usuários <span style="color: orangered;">compartilham informações</span>, opiniões, experiências e conteúdo variado. Geralmente atualizados regularmente, os blogs permitem <span style="color: orangered;">interação por meio de comentários</span>. Exemplos incluem blogs pessoais, empresariais, corporativos e de notícias.</p>
+
+        <h2>Redes Sociais</h2>
+                <p>Seguindo a mesma direção as redes sociais são espaços online onde os usuários <span style="color: orangered;">criam perfis</span>, se conectam e compartilham conteúdo, como fotos, vídeos e mensagens. Projetadas para facilitar a <span style="color: orangered;">interação social</span>, as redes sociais possibilitam seguir, curtir e comentar nas postagens de outros usuários. Exemplos são <a href="https://www.tiktok.com/" target="_blank">TikTok</a> e <a href="https://www.instagram.com/" target="_blank">Instagram</a>.</p>
+        
+        <h2>E-commerce</h2>
+                <p>Já sites de E-commerce são plataformas para <span style="color: orangered;">compra e venda online</span>, permitindo aos usuários navegar por produtos, efetuar <span style="color: orangered;">compras</span> e transações financeiras. Exemplos incluem <a href="https://www.amazon.com/" target="_blank" target="_blank">Amazon</a> e <a href="https://www.mercadolivre.com.br/" target="_blank">Mercado Livre</a>.</p>
+
+        <h2>Sites bancários</h2>
+                <p>As plataformas bancárias online são disponibilizadas pelos bancos para que os clientes <span style="color: orangered;">acessem suas contas</span>, realizem transações, <span style="color: orangered;">paguem contas</span> e realizem operações bancárias. Esses sites exigem autenticação segura e são protegidos por <span style="color: orangered;">criptografia</span> para garantir a segurança das informações dos clientes, como <a href="https://www.bb.com.br/site/" target="_blank" rel="noopener noreferrer">Banco do Brasil</a> e <a href="https://banco.bradesco/html/classic/index.shtm" target="_blank" rel="noopener noreferrer">Bradesco</a>.</p>
+
+        <h2>Multimídia</h2>
+                <p>E por último, a multimídia combina diferentes tipos de mídia, como texto, imagens, áudio, vídeo e animação, para <span style="color: orangered;">transmitir informações</span> e criar experiências interativas. Essa forma de comunicação utiliza diversos meios para transmitir mensagens de maneira <span style="color: orangered;">eficaz e envolvente</span>. Exemplos incluem gravadores de vídeo como câmera, televisão e internet.</p>
+        <hr><br><br>
+    </body>
+
+</html>
+<!--Feito pelo VSCode-->
